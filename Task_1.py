@@ -19,7 +19,7 @@ class MealTimeChecker:
         for meal, (start, end) in self.meal_times.items():
             if start <= user_time_float <= end:
                 print(f"Time for {meal}")
-                return
+                return user_time_float
 
 
 user_time_input = input("Enter the time in *:*, *:** or **:** format: ")
